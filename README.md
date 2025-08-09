@@ -29,7 +29,7 @@ FLASK-PORTFOLIO-WEBSITE-SAMPLE/
 - On form submission (POST), prints the message in the console and redirects back to home.
 - Basic HTML templating with render_template.
 - Static files handling for CSS, JavaScript, images, and documents.
-- fully responsive design that adapts seamlessly across mobile, tablet, and desktop devices.
+- Fully responsive design that adapts seamlessly across mobile, tablet, and desktop devices.
 
 ## 🔧 Requirements
 
