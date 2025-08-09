@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amir Coder — Software Engineer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+
+<body>
+  <nav class="nav" id="navbar">
+    <div class="container nav-inner">
+      <div class="brand">
+        <img src="{{ url_for('static', filename='profile.jpg') }}" alt="logo">
+        <span>Amir Coder</span>
+      </div>
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-grid container">
+      <div class="hero-left">
+        <h1>Amir Coder</h1>
+        <p class="lead">Senior Software Engineer — Backend, Cloud & AI</p>
+        <p class="intro">I design and build high-performance web platforms and intelligent systems using Python, Flask,
+          and cloud-native architectures. Passionate about scalable systems, observability, and delightful developer
+          experience.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#contact">Hire Me</a>
+        </div>
+        <div class="stats">
+          <div><strong>6+</strong><span>Years exp</span></div>
+          <div><strong>30+</strong><span>Projects</span></div>
+          <div><strong>10</strong><span>Certifications</span></div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="profile-card">
+          <img src="{{ url_for('static', filename='profile.jpg') }}" alt="profile" class="profile-large">
+          <div class="profile-meta">
+            <h3>Amir Coder</h3>
+            <p>Software Engineer — Python • Flask • Cloud</p>
+            <a class="download" href="{{ url_for('static', filename='resume_amir.pdf') }}" download>Download
+              Resume</a>
+          </div>
+          <div class="glow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="animated-bg"></div>
+  </header>
+
+  <main>
+    <section id="about" class="section about container reveal">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div>
+          <p>I am a seasoned software engineer specialized in backend systems, APIs, and machine learning integrations.
+            I have led teams to build scalable microservices deployed on AWS and GCP, implemented observability with
+            Prometheus & Grafana, and shipped ML-powered features that improved user engagement.</p>
+          <ul class="bullets">
+            <li>Architected microservices with REST & gRPC</li>
+            <li>Designed data pipelines and ETL for analytics</li>
+            <li>Implemented CI/CD and containerized deployments</li>
+          </ul>
+        </div>
+        <div class="key-areas">
+          <div><strong>Core:</strong> Python, Flask, FastAPI</div>
+          <div><strong>Web:</strong> JavaScript, React, HTML/CSS</div>
+          <div><strong>Data:</strong> PostgreSQL, MongoDB, Redis</div>
+          <div><strong>Cloud:</strong> AWS (EC2, Lambda, EKS), Docker, Kubernetes</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills container reveal">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <label>Python</label>
+          <div class="bar">
+            <div class="fill" style="--pct:95%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <label>System Design</label>
+          <div class="bar">
+            <div class="fill" style="--pct:90%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <label>Flask / FastAPI</label>
+          <div class="bar">
+            <div class="fill" style="--pct:93%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <label>Docker & Kubernetes</label>
+          <div class="bar">
+            <div class="fill" style="--pct:85%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <label>Cloud (AWS/GCP)</label>
+          <div class="bar">
+            <div class="fill" style="--pct:88%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <label>ML & Data</label>
+          <div class="bar">
+            <div class="fill" style="--pct:75%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects container reveal">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="proj-card">
+          <div class="proj-thumb"></div>
+          <div class="proj-body">
+            <h3>AI Chatbot Platform</h3>
+            <p>Scalable conversational platform with intent recognition, slot filling, and integrations into support
+              workflows. Deployed with autoscaling and observability.</p>
+            <p class="tech">Python • Flask • Kubernetes • Redis</p>
+          </div>
+        </article>
+        <article class="proj-card">
+          <div class="proj-thumb"></div>
+          <div class="proj-body">
+            <h3>Real-time Analytics Dashboard</h3>
+            <p>Aggregates streaming events, provides real-time charts and alerting for operations teams. Multi-tenant
+              and secure.</p>
+            <p class="tech">Node • React • PostgreSQL • Kafka</p>
+          </div>
+        </article>
+        <article class="proj-card">
+          <div class="proj-thumb"></div>
+          <div class="proj-body">
+            <h3>Task Manager (SaaS)</h3>
+            <p>Collaboration platform with task automation, notifications, and performance optimizations for large orgs.
+            </p>
+            <p class="tech">Python • FastAPI • Redis • Docker</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience container reveal">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="item">
+          <h3>Senior Software Engineer — TechCorp Inc.</h3>
+          <span class="when">2020 - Present</span>
+          <p>Leading backend platform team, designing microservices and ML feature integrations. Improved request
+            throughput by 40% and reduced costs via optimization.</p>
+        </div>
+        <div class="item">
+          <h3>Software Engineer — WebSolutions Ltd.</h3>
+          <span class="when">2017 - 2020</span>
+          <p>Built full-stack solutions for clients, implemented CI/CD pipelines and containerized deployments.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section education container reveal">
+      <h2>Education</h2>
+      <div class="edu-grid">
+        <div>
+          <h3>B.Tech Computer Science — XYZ University</h3>
+          <p>2013 - 2017</p>
+        </div>
+        <div>
+          <h3>Machine Learning Specialization — Coursera</h3>
+          <p>2019</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section certs container reveal">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>AWS Certified Solutions Architect</li>
+        <li>Google Cloud Professional Data Engineer</li>
+        <li>Certified Kubernetes Administrator (CKA)</li>
+        <li>Machine Learning — Coursera</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section contact container reveal">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <form class="contact-form" method="POST">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <h3>Get in touch</h3>
+          <p>Email: amir.coder@example.com</p>
+          <p>Location: Remote (available worldwide)</p>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="GitHub">GitHub</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Amir Coder — Software Engineer</p>
+    </div>
+  </footer>
+</body>
+
+</html>
