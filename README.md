@@ -1,6 +1,6 @@
 # 🧑‍💻 Flask-Portfolio-Website-Sample
 
-This is a sample portfolio website built using Flask. It demonstrates a basic Flask app structure with a contact form that accepts user input and prints it to the console.
+This is a sample portfolio website built using Flask. It demonstrates a basic Flask app structure with a contact form that accepts user input and prints it to the console. It features a fully responsive design that adapts seamlessly across mobile, tablet, and desktop devices.
 
 ## 📁 Project Structure
 
